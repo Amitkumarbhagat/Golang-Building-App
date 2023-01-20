@@ -123,5 +123,42 @@ So let's look at how we can actually serve real Web pages.
 And to do that, we're going to use a package that's built into the standard library called HTML template.
 But before we do that, let's clean things up.
 
+package main
+
+import (
+	"fmt"
+	"html/template"
+	"net/http"
+)
+
+const portNumber = ":8080"
+
+//Home is the home page handler
+func Home(w http.ResponseWriter, r *http.Request) {
+	renderTemplate(w, "home.page.tmpl")
+}
+
+// About is the about page handler
+func About(w http.ResponseWriter, r *http.Request) {
+	renderTemplate(w, "about.page.tmpl")
+}
+
+func renderTemplate(w http.ResponseWriter, tmpl string) {
+	parsedTemplate, _ := template.ParseFiles("./templates/" + tmpl)
+	err := parsedTemplate.Execute(w, nil)
+	if err != nil {
+		fmt.Println("error parsing template", err)
+		return
+	}
+}
+
+//main is application function
+func main() {
+	http.HandleFunc("/", Home)
+	http.HandleFunc("/about", About)
+
+	fmt.Println(fmt.Sprintf("starting application on port %s", portNumber))
+	_ = http.ListenAndServe(portNumber, nil)
+}
 
 
