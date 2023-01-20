@@ -161,4 +161,20 @@ func main() {
 	_ = http.ListenAndServe(portNumber, nil)
 }
 
+=======================================================
 
+A note for Windows Users
+Important: Windows Users
+In the next few lectures, lecture, I run multiple Go files at the same time on a Macintosh like this:
+
+go run *.go
+
+On Windows, though, this will not work unless you have customized your IDE or terminal. Instead, use this command:
+
+go run .
+
+(note the dot at the end of this command). Note also that you can use the same command, go run ., on Mac and Linux as well.
+
+Thanks to Craig for pointing this out.
+
+================================================
