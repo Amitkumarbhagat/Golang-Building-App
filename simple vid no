@@ -268,3 +268,5 @@ What I want to do this time around is three things.
 First of all, I want to enable go modules which will be using fairly extensively through the remainder
 Secondly, I want to rearrange things again to support go modules to make it easier to support go modules.
 And thirdly, I want to use templates from a layout and pass data to them.
+
+===============================  29. working with layouts  ===========================================
