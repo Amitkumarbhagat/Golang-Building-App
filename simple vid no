@@ -335,3 +335,6 @@ func createTemplateCache(t string) error {
 	tc[t] = tmpl
 	return err
 }
+
+==============================  31  Building a more complex template cached  ===========
+
