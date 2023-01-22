@@ -1,4 +1,4 @@
-========================   22   ======================================
+========================   video 22   ======================================
 
 package main
 
@@ -20,7 +20,7 @@ func main() {
 }
 
 
-====================================  23 ===========================================
+==================================== Video 23 ===========================================
 
 package main
 
@@ -57,7 +57,7 @@ func main() {
 	_ = http.ListenAndServe(portNumber, nil)
 }
 
-====================  Error Checking 24 ======================================
+====================  Error Checking video 24 ======================================
 
 package main
 
@@ -115,7 +115,7 @@ func main() {
 }
 
 
-================== 25  ==  serving html template  ===================================
+================== video 25  ==  serving html template  ===================================
 
 All right, things are starting to come along, but so far all we're doing when we show pages is writing
 a little string of text to the browser window, and that's not exactly useful.
@@ -235,7 +235,7 @@ func About(w http.ResponseWriter, r *http.Request) {
 	renderTemplate(w, "about.page.tmpl")
 }
 
-----------------------------------------
+-----------------------------------------
 home.page.tmpl
 
 <!DOCTYPE html>
