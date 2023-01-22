@@ -271,7 +271,7 @@ And thirdly, I want to use templates from a layout and pass data to them.
 
 ===============================  29. working with layouts  ===========================================
 
-================================ 30. building a simple cache file ===================
+================================ 30. building a simple cache file ==================
 
 package render
 
