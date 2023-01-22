@@ -235,7 +235,7 @@ func About(w http.ResponseWriter, r *http.Request) {
 	renderTemplate(w, "about.page.tmpl")
 }
 
------------------------------------------
+----------------------------------------
 home.page.tmpl
 
 <!DOCTYPE html>
