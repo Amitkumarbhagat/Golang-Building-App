@@ -19,6 +19,7 @@ package handlers
 
 import (
 	"github.com/amitkumarbhagat/golang/pkg/config"
+	"github.com/amitkumarbhagat/golang/pkg/models"
 	"github.com/amitkumarbhagat/golang/pkg/render"
 	"net/http"
 )
