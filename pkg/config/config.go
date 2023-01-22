@@ -2,7 +2,7 @@ package config
 
 import "html/template"
 
-// AppConfig hold the application config
+// AppConfig holds the application config
 type AppConfig struct {
 	TemplateCache map[string]*template.Template
 }
